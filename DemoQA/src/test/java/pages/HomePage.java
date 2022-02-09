@@ -32,7 +32,7 @@ List<WebElement> cardNames;
         return driver.findElements(By.tagName("h5"));
     }
 
-    public WebElement getTitlesOfCathegoryPages() {
+    public WebElement getTitlesOfCategoryPages() {
         return driver.findElement(By.className("main-header"));
     }
 

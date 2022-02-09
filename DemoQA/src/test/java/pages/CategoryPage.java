@@ -10,7 +10,7 @@ import java.util.List;
 public class CategoryPage {
     WebDriver driver;
     WebDriverWait wdwait;
-    WebElement titlesOfCathegoryPages;
+    WebElement titlesOfCategoryPages;
     List<WebElement> accordion;
 
     public CategoryPage(WebDriver driver, WebDriverWait wdwait) {
@@ -18,7 +18,7 @@ public class CategoryPage {
         this.wdwait = wdwait;
     }
 
-    public WebElement getTitlesOfCathegoryPages() {
+    public WebElement getTitlesOfCategoryPages() {
         return driver.findElement(By.className("main-header"));
     }
 
@@ -28,8 +28,8 @@ public class CategoryPage {
 
 
 
-    public String  titleOfCathegoryPagesText(){
-        return getTitlesOfCathegoryPages().getText();
+    public String titleOfCategoryPagesText(){
+        return getTitlesOfCategoryPages().getText();
     }
 
     public void clickOnAccordionGroupHeader(String s){

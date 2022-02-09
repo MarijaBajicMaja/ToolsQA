@@ -23,21 +23,6 @@ public class TextBox {
         this.wdwait = wdwait;
     }
 
-    /* public WebElement getFullname() {
-        return driver.findElement(By.id("userName"));}
-
-    public WebElement getEmail() {
-        return driver.findElement(By.id("userEmail"));
-    }
-
-    public WebElement getCurrentAddress() {
-        return driver.findElement(By.id("currentAddress"));
-    }
-
-    public WebElement getPermanentAddress() {
-        return driver.findElement(By.id("permanentAddress"));
-    } */
-
     public WebElement getSubmit() {
         return driver.findElement(By.id("submit"));
     }

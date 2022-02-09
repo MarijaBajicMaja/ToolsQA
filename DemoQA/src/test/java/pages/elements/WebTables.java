@@ -54,14 +54,6 @@ public class WebTables {
         getAddButton().click();
     }
 
-   /* public WebElement element(String s){
-        WebElement el= null;
-        for(WebElement w: getrForm()){
-            if(w.getText().equals(s)){
-               el = w;
-            }
-        } return el;
-    } */
     public void insertData(WebElement e, String s){
         e.clear();
         e.sendKeys(s);

@@ -5,9 +5,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.CategoryPage;
 import pages.ElementsPage;
@@ -24,7 +24,7 @@ public class BasePage{
     public HomePage homePage;
     public ExcelReader excelReader;
     public ElementsPage elementsPage;
-    public CategoryPage cathegoryPage;
+    public CategoryPage categoryPage;
     public TextBox textBox;
     public CheckBox checkBox;
     public RadioButton radioButton;
@@ -42,7 +42,7 @@ public class BasePage{
         homePage = new HomePage(driver, wdwait);
         excelReader = new ExcelReader("DemoQA.xlsx");
         elementsPage = new ElementsPage(driver,wdwait);
-        cathegoryPage = new CategoryPage(driver,wdwait);
+        categoryPage = new CategoryPage(driver,wdwait);
         textBox = new TextBox(driver, wdwait);
         checkBox = new CheckBox(driver,wdwait);
         radioButton = new RadioButton(driver,wdwait);
@@ -76,10 +76,10 @@ public class BasePage{
     }
 
 
-  /*  @AfterClass
+    @AfterClass
     public void tearDown(){
         driver.manage().deleteAllCookies();
         driver.close();
         driver.quit();
-    } */
+    }
 }

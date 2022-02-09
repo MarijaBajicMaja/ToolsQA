@@ -23,7 +23,7 @@ public class TestElementsPage extends BasePage {
         Assert.assertTrue(elementsPage.getElementsAccordionShow().isDisplayed());
         String classShow = elementsPage.getElementsAccordionShow().getAttribute("class");
 
-        cathegoryPage.clickOnAccordionGroupHeader("Elements");
+        categoryPage.clickOnAccordionGroupHeader("Elements");
         Assert.assertNotEquals(elementsPage.getElementsAccordion().getAttribute("class"), classShow);
 
         }

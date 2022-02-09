@@ -1,7 +1,6 @@
 package test;
 
 import base.BasePage;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -39,7 +38,7 @@ public class TestHomePage extends BasePage {
             waiterURL(excelReader.getStringData("URL", (i + 1), 1));
 
             Assert.assertEquals(driver.getCurrentUrl(), excelReader.getStringData("URL", (i + 1), 1));
-            Assert.assertTrue(cathegoryPage.titleOfCathegoryPagesText().contains(excelReader.getStringData("URL",(i+1),2)));
+            Assert.assertTrue(categoryPage.titleOfCategoryPagesText().contains(excelReader.getStringData("URL",(i+1),2)));
 
             driver.get(excelReader.getStringData("URL", 0, 1));
             waiterURL(excelReader.getStringData("URL", 0, 1));
